@@ -17,10 +17,10 @@
     <style>
         /* الألوان المطلوبة (Navy Blue, Gold, Sand) */
         :root {
-            --navy-blue: #0A192F; /* لون كحلي فاخر */
-            --gold: #D4AF37;      /* ذهبي أنيق */
-            --sand: #F3E5D8;      /* رملي هادئ للراحة البصرية */
-            --whatsapp-green: #25D366; /* لون الواتساب الرسمي */
+            --navy-blue: #0A192F;
+            --gold: #D4AF37;
+            --sand: #F3E5D8;
+            --whatsapp-green: #25D366;
             --white: #FFFFFF;
             --text-dark: #333333;
         }
@@ -37,11 +37,9 @@
             color: var(--text-dark);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
-            /* توفير مساحة للزر الثابت بالأسفل */
             padding-bottom: 80px; 
         }
 
-        /* Header - شريط علوي بسيط */
         header {
             background-color: var(--navy-blue);
             color: var(--gold);
@@ -59,10 +57,8 @@
             letter-spacing: 0.5px;
         }
 
-        /* Hero Section - القسم الرئيسي مع صورة القاهرة */
         .hero {
             position: relative;
-            /* صورة للقاهرة مع طبقة تظليل كحلية لإبراز النصوص */
             background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.85)), url('https://images.unsplash.com/photo-1539650116574-8efeb43e2750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
             color: var(--white);
             text-align: center;
@@ -90,7 +86,6 @@
             font-weight: 600;
         }
 
-        /* تصميم أزرار الواتساب */
         .wa-btn {
             background-color: var(--whatsapp-green);
             color: var(--white);
@@ -118,13 +113,12 @@
             font-size: 1.5rem;
         }
 
-        /* عرض رقم الهاتف بوضوح */
         .phone-display {
             margin-top: 20px;
             font-size: 1.4rem;
             font-weight: 800;
             color: var(--white);
-            direction: ltr; /* الحفاظ على تنسيق الأرقام بشكل صحيح */
+            direction: ltr;
             display: inline-block;
             background: rgba(255,255,255,0.1);
             padding: 8px 20px;
@@ -132,7 +126,6 @@
             border: 1px solid var(--gold);
         }
 
-        /* Services Section - قسم الخدمات */
         .services {
             padding: 40px 20px;
             background-color: var(--sand);
@@ -180,7 +173,6 @@
             margin: 0;
         }
 
-        /* قسم الثقة النهائي */
         .final-cta {
             padding: 50px 20px;
             text-align: center;
@@ -194,7 +186,6 @@
             font-size: 1.5rem;
         }
 
-        /* Floating WhatsApp Button - الزر العائم أسفل الشاشة */
         .floating-wa {
             position: fixed;
             bottom: 20px;
@@ -211,7 +202,6 @@
             100% { transform: translateX(-50%) scale(1); }
         }
 
-        /* تعديلات للشاشات الأكبر لضمان التوافق (Responsive) */
         @media (min-width: 768px) {
             .services-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -238,7 +228,7 @@
 
     <!-- Header -->
     <header>
-        <h2>انحاء للتسويق السياحي | Anhaa</h2>
+        <h2>انحاء للتسويق السياحي | Enha</h2>
     </header>
 
     <!-- Hero Section -->
@@ -251,7 +241,6 @@
             تواصل معنا عبر واتساب
         </a>
         
-        <!-- رقم الواتساب ظاهر كنص لبناء الثقة -->
         <div class="phone-display">
             <i class="fab fa-whatsapp" style="margin-right: 5px; font-size: 1.2rem; color: var(--whatsapp-green);"></i> 
             +20 111 733 3065
@@ -286,6 +275,15 @@
                 <i class="fas fa-map-marked-alt"></i>
                 <h3>تنظيم برنامجك السياحي بالقاهرة</h3>
             </div>
+            <!-- الخدمات الجديدة المضافة -->
+            <div class="service-card">
+                <i class="fas fa-headset"></i>
+                <h3>متابعة طوال رحلتك على مدار الساعة</h3>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>تنظيم السياحة العلاجية</h3>
+            </div>
         </div>
     </section>
 
@@ -299,7 +297,7 @@
         </a>
     </section>
 
-    <!-- Floating WhatsApp Button (يظل ثابتاً في منتصف الشاشة من الأسفل للموبايل) -->
+    <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/201117333065?text=أهلاً%20انحاء،%20شوفت%20إعلانكم%20على%20سناب%20شات%20وعايز%20أعرف%20عروض%20القاهرة." class="wa-btn floating-wa" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i>
         تواصل معنا عبر واتساب

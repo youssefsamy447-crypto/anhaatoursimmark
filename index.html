@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* الألوان المطلوبة (Navy Blue, Gold, Sand) */
         :root {
             --navy-blue: #0A192F;
             --gold: #D4AF37;
@@ -174,7 +173,7 @@
         }
 
         .final-cta {
-            padding: 50px 20px;
+            padding: 50px 20px 30px;
             text-align: center;
             background-color: var(--navy-blue);
             color: var(--white);
@@ -184,6 +183,35 @@
             color: var(--gold);
             margin-bottom: 15px;
             font-size: 1.5rem;
+        }
+        
+        .social-links {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: var(--white);
+            background-color: rgba(255, 255, 255, 0.05);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(212, 175, 55, 0.5);
+        }
+
+        .social-links a:hover {
+            background-color: var(--gold);
+            color: var(--navy-blue);
+            border-color: var(--gold);
+            transform: translateY(-5px);
         }
 
         .floating-wa {
@@ -226,12 +254,10 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <h2>انحاء للتسويق السياحي | Anhaa</h2>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <h1>القاهرة أحلى مع انحاء</h1>
         <p>إقامتك وتنقلاتك وتجربتك في القاهرة.. إحنا نهتم بكل التفاصيل.</p>
@@ -247,7 +273,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="services">
         <h2>خدماتنا في القاهرة</h2>
         <div class="services-grid">
@@ -275,7 +300,6 @@
                 <i class="fas fa-map-marked-alt"></i>
                 <h3>تنظيم برنامجك السياحي بالقاهرة</h3>
             </div>
-            <!-- الخدمات الجديدة المضافة -->
             <div class="service-card">
                 <i class="fas fa-headset"></i>
                 <h3>متابعة طوال رحلتك على مدار الساعة</h3>
@@ -287,7 +311,6 @@
         </div>
     </section>
 
-    <!-- Trust / Final CTA Section -->
     <section class="final-cta">
         <h2>جاهز لتبدأ رحلتك؟</h2>
         <p style="margin-bottom: 25px; color: var(--sand); font-weight: 600;">بضغطة زر، فريقنا جاهز لترتيب كل حجوزاتك.</p>
@@ -295,9 +318,17 @@
             <i class="fab fa-whatsapp"></i>
             احجز الآن عبر واتساب
         </a>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/anhaa_tourizm_marketing?obrf=MTdodThtOHF6c2E2OA==" target="_blank" rel="noopener" aria-label="تابعنا على إنستجرام">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://snapchat.com/t/JQaBV8sN" target="_blank" rel="noopener" aria-label="تابعنا على سناب شات">
+                <i class="fab fa-snapchat-ghost"></i>
+            </a>
+        </div>
     </section>
 
-    <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/201117333065?text=أهلاً%20انحاء،%20شوفت%20إعلانكم%20على%20سناب%20شات%20وعايز%20أعرف%20عروض%20القاهرة." class="wa-btn floating-wa" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i>
         تواصل معنا عبر واتساب

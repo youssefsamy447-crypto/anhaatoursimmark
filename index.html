@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="انحاء للتسويق السياحي - إقامتك وتنقلاتك وتجربتك في القاهرة.. إحنا نهتم بكل التفاصيل.">
     <title>انحاء للتسويق السياحي - القاهرة أحلى</title>
-
+    
     <!-- Google Fonts: Cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <style>
+        /* الألوان المطلوبة (Navy Blue, Gold, Sand) */
         :root {
-            --navy-blue: #0A192F;
-            --gold: #D4AF37;
-            --sand: #F3E5D8;
-            --whatsapp-green: #25D366;
+            --navy-blue: #0A192F; /* لون كحلي فاخر */
+            --gold: #D4AF37;      /* ذهبي أنيق */
+            --sand: #F3E5D8;      /* رملي هادئ للراحة البصرية */
+            --whatsapp-green: #25D366; /* لون الواتساب الرسمي */
             --white: #FFFFFF;
             --text-dark: #333333;
         }
@@ -36,9 +37,11 @@
             color: var(--text-dark);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
-            padding-bottom: 80px;
+            /* توفير مساحة للزر الثابت بالأسفل */
+            padding-bottom: 80px; 
         }
 
+        /* Header - شريط علوي بسيط */
         header {
             background-color: var(--navy-blue);
             color: var(--gold);
@@ -56,8 +59,10 @@
             letter-spacing: 0.5px;
         }
 
+        /* Hero Section - القسم الرئيسي مع صورة القاهرة */
         .hero {
             position: relative;
+            /* صورة للقاهرة مع طبقة تظليل كحلية لإبراز النصوص */
             background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.85)), url('https://images.unsplash.com/photo-1539650116574-8efeb43e2750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover;
             color: var(--white);
             text-align: center;
@@ -85,6 +90,7 @@
             font-weight: 600;
         }
 
+        /* تصميم أزرار الواتساب */
         .wa-btn {
             background-color: var(--whatsapp-green);
             color: var(--white);
@@ -112,12 +118,13 @@
             font-size: 1.5rem;
         }
 
+        /* عرض رقم الهاتف بوضوح */
         .phone-display {
             margin-top: 20px;
             font-size: 1.4rem;
             font-weight: 800;
             color: var(--white);
-            direction: ltr;
+            direction: ltr; /* الحفاظ على تنسيق الأرقام بشكل صحيح */
             display: inline-block;
             background: rgba(255,255,255,0.1);
             padding: 8px 20px;
@@ -125,6 +132,7 @@
             border: 1px solid var(--gold);
         }
 
+        /* Services Section - قسم الخدمات */
         .services {
             padding: 40px 20px;
             background-color: var(--sand);
@@ -137,7 +145,6 @@
             font-size: 1.6rem;
             font-weight: 800;
         }
-
 
         .services-grid {
             display: grid;
@@ -173,12 +180,9 @@
             margin: 0;
         }
 
-
-
-
-
+        /* قسم الثقة النهائي */
         .final-cta {
-            padding: 50px 20px 30px;
+            padding: 50px 20px;
             text-align: center;
             background-color: var(--navy-blue);
             color: var(--white);
@@ -190,35 +194,7 @@
             font-size: 1.5rem;
         }
 
-        .social-links {
-            margin-top: 35px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .social-links a {
-            color: var(--white);
-            background-color: rgba(255, 255, 255, 0.05);
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            text-decoration: none;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(212, 175, 55, 0.5);
-        }
-
-        .social-links a:hover {
-            background-color: var(--gold);
-            color: var(--navy-blue);
-            border-color: var(--gold);
-            transform: translateY(-5px);
-        }
-
+        /* Floating WhatsApp Button - الزر العائم أسفل الشاشة */
         .floating-wa {
             position: fixed;
             bottom: 20px;
@@ -235,6 +211,7 @@
             100% { transform: translateX(-50%) scale(1); }
         }
 
+        /* تعديلات للشاشات الأكبر لضمان التوافق (Responsive) */
         @media (min-width: 768px) {
             .services-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -259,28 +236,32 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <h2>انحاء للتسويق السياحي | Anhaa</h2>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <h1>القاهرة أحلى مع انحاء</h1>
         <p>إقامتك وتنقلاتك وتجربتك في القاهرة.. إحنا نهتم بكل التفاصيل.</p>
+        
+       <a href="https://wa.me/966553641758?text=أهلاً%20انحاء،%20محتاج%20أعرف%20خدماتكم%20في%20القاهرة." class="wa-btn floating-wa" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        تواصل معنا عبر واتساب
+    </a>
 
-        <a href="https://wa.me/966553641758?text=%D8%A7%D9%87%D9%84%D8%A7%20%D8%A3%D9%86%D8%AD%D8%A7%D8%A1%D8%8C%20%D9%85%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9" class="wa-btn" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i>
-            تواصل معنا عبر واتساب
-        </a>
-
+        
+        <!-- رقم الواتساب ظاهر كنص لبناء الثقة -->
         <div class="phone-display">
-            <i class="fab fa-whatsapp" style="margin-right: 5px; font-size: 1.2rem; color: var(--whatsapp-green);"></i>
-            +966 553 641 758
+            <i class="fab fa-whatsapp" style="margin-right: 5px; font-size: 1.2rem; color: var(--whatsapp-green);"></i> 
+            +20 111 733 3065
         </div>
     </section>
 
+    <!-- Services Section -->
     <section class="services">
         <h2>خدماتنا في القاهرة</h2>
-
         <div class="services-grid">
             <div class="service-card">
                 <i class="fas fa-hotel"></i>
@@ -306,36 +287,22 @@
                 <i class="fas fa-map-marked-alt"></i>
                 <h3>تنظيم برنامجك السياحي بالقاهرة</h3>
             </div>
-            <div class="service-card">
-                <i class="fas fa-headset"></i>
-                <h3>متابعة طوال رحلتك على مدار الساعة</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-heartbeat"></i>
-                <h3>تنظيم السياحة العلاجية</h3>
-            </div>
         </div>
     </section>
 
+    <!-- Trust / Final CTA Section -->
     <section class="final-cta">
         <h2>جاهز لتبدأ رحلتك؟</h2>
         <p style="margin-bottom: 25px; color: var(--sand); font-weight: 600;">بضغطة زر، فريقنا جاهز لترتيب كل حجوزاتك.</p>
-        <a href="https://wa.me/966553641758?text=%D8%A7%D9%87%D9%84%D8%A7%20%D8%A3%D9%86%D8%AD%D8%A7%D8%A1%D8%8C%20%D9%85%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9" class="wa-btn" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i>
-            احجز الآن عبر واتساب
-        </a>
+       <a href="https://wa.me/966553641758?text=أهلاً%20انحاء،%20محتاج%20أعرف%20خدماتكم%20في%20القاهرة." class="wa-btn floating-wa" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        تواصل معنا عبر واتساب
+    </a>
 
-        <div class="social-links">
-            <a href="https://www.instagram.com/anhaa_tourizm_marketing?obrf=MTdodThtOHF6c2E2OA==" target="_blank" rel="noopener" aria-label="تابعنا على إنستجرام">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://snapchat.com/t/JQaBV8sN" target="_blank" rel="noopener" aria-label="تابعنا على سناب شات">
-                <i class="fab fa-snapchat-ghost"></i>
-            </a>
-        </div>
     </section>
 
-    <a href="https://wa.me/966553641758?text=%D8%A7%D9%87%D9%84%D8%A7%20%D8%A3%D9%86%D8%AD%D8%A7%D8%A1%D8%8C%20%D9%85%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9" class="wa-btn floating-wa" target="_blank" rel="noopener">
+    <!-- Floating WhatsApp Button (يظل ثابتاً في منتصف الشاشة من الأسفل للموبايل) -->
+    <a href="https://wa.me/966553641758?text=أهلاً%20انحاء،%20محتاج%20أعرف%20خدماتكم%20في%20القاهرة." class="wa-btn floating-wa" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i>
         تواصل معنا عبر واتساب
     </a>
